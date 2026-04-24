@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+.gitignore
+.pytest_cache/
+.mypy_cache/
+.streamlit/
+checkpoints/
+eval_results/
+sample_data/
+sample_images/

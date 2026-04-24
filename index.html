@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LungX AI Research Hub</title>
+  <meta name="description" content="Modern research website for deep learning-based lung disease analysis in chest X-rays, featuring publications, datasets, visual analytics, team profiles, and collaboration tools.">
+  <meta name="theme-color" content="#0c1424">
+  <meta property="og:title" content="LungX AI Research Hub">
+  <meta property="og:description" content="Deep learning for chest X-ray analysis, clinical workflow simulation, and explainable lung disease research.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lungx-ai.example/">
+  <meta property="og:image" content="/assets/media/hero-pulse.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://lungx-ai.example/">
+  <link rel="alternate" hreflang="en" href="https://lungx-ai.example/">
+  <link rel="alternate" hreflang="de" href="https://lungx-ai.example/?lang=de">
+  <link rel="icon" href="/assets/media/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/css/styles.css" as="style">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "LungX AI Research Hub",
+      "url": "https://lungx-ai.example/",
+      "inLanguage": ["en", "de"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://lungx-ai.example/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "LungX AI Consortium"
+      }
+    }
+  </script>
+  <script defer src="/assets/js/site-data.js"></script>
+  <script defer src="/assets/js/app.js"></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <section class="hero section">
+      <div class="hero-particles">
+        <canvas id="particle-canvas" aria-hidden="true"></canvas>
+      </div>
+      <div class="hero-grid shell">
+        <div class="hero-copy">
+          <div class="eyebrow" data-i18n="heroEyebrow">Medical imaging research portal</div>
+          <h1 data-i18n="heroTitle">Deep Learning for Lung Disease Analysis in Chest X-rays</h1>
+          <p class="lead" data-i18n="heroLead">
+            A responsive, multilingual research platform for publications, datasets, explainability tools,
+            and clinical workflow insights grounded in chest X-ray deep learning.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="/research/" data-i18n="heroPrimaryCta">Explore the research</a>
+            <a class="button button-secondary" href="/datasets/" data-i18n="heroSecondaryCta">Browse datasets</a>
+          </div>
+          <div class="hero-trust">
+            <span class="inline-pill">WCAG 2.2 ready</span>
+            <span class="inline-pill">EN / DE</span>
+            <span class="inline-pill">Schema + SEO</span>
+            <span class="inline-pill">Cloud-ready architecture</span>
+          </div>
+        </div>
+
+        <aside class="hero-panel glass-panel" aria-label="Research snapshot">
+          <div class="panel-header">
+            <span class="panel-kicker" data-i18n="snapshotTitle">Research snapshot</span>
+            <span class="status-dot" aria-hidden="true"></span>
+          </div>
+          <div class="signal-grid">
+            <article class="signal-card">
+              <div class="signal-label">ChestX-ray14</div>
+              <div class="signal-value">112,120</div>
+              <div class="signal-note" data-i18n="snapshotDatasetNote">frontal X-rays from 30,805 patients</div>
+            </article>
+            <article class="signal-card">
+              <div class="signal-label">OpenI Revised</div>
+              <div class="signal-value">3,125</div>
+              <div class="signal-note" data-i18n="snapshotOpenINote">curated studies with 8 consensus findings</div>
+            </article>
+            <article class="signal-card">
+              <div class="signal-label">Best AUROC</div>
+              <div class="signal-value">0.806</div>
+              <div class="signal-note" data-i18n="snapshotAurocNote">official split, ResNet-38-large-meta</div>
+            </article>
+            <article class="signal-card">
+              <div class="signal-label">Clinical impact</div>
+              <div class="signal-value">2x</div>
+              <div class="signal-note" data-i18n="snapshotImpactNote">faster RTAT for pneumothorax in simulation</div>
+            </article>
+          </div>
+          <div class="mini-legend">
+            <span><i class="legend-chip chip-one"></i><span data-i18n="legendOne">classification</span></span>
+            <span><i class="legend-chip chip-two"></i><span data-i18n="legendTwo">preprocessing</span></span>
+            <span><i class="legend-chip chip-three"></i><span data-i18n="legendThree">workflow triage</span></span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section shell quick-links">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow" data-i18n="quickEyebrow">Start here</div>
+          <h2 data-i18n="quickTitle">Fast paths into the project</h2>
+        </div>
+      </div>
+      <div class="feature-grid">
+        <a class="feature-card" href="/publications/">
+          <div class="feature-icon">01</div>
+          <h3 data-i18n="quickPublicationsTitle">Latest publications</h3>
+          <p data-i18n="quickPublicationsBody">Open the filtered publication library with DOI links, abstracts, and citation export.</p>
+        </a>
+        <a class="feature-card" href="/datasets/">
+          <div class="feature-icon">02</div>
+          <h3 data-i18n="quickDatasetsTitle">Datasets and access</h3>
+          <p data-i18n="quickDatasetsBody">Review curated metadata, license guidance, access roles, and secure download flows.</p>
+        </a>
+        <a class="feature-card" href="/tools/#analytics">
+          <div class="feature-icon">03</div>
+          <h3 data-i18n="quickToolsTitle">Interactive analytics</h3>
+          <p data-i18n="quickToolsBody">Inspect AUROC bands, confusion matrices, and Grad-CAM style explainability previews.</p>
+        </a>
+        <a class="feature-card" href="/team/">
+          <div class="feature-icon">04</div>
+          <h3 data-i18n="quickTeamTitle">Team and partners</h3>
+          <p data-i18n="quickTeamBody">Meet the collaborators behind the project and explore institutional partnerships.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section shell">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow" data-i18n="researchEyebrow">Research focus</div>
+          <h2 data-i18n="researchTitle">Three connected workstreams</h2>
+        </div>
+        <a class="inline-link" href="/research/" data-i18n="researchLink">View the full research page</a>
+      </div>
+      <div class="stream-grid">
+        <article class="stream-card">
+          <span class="stream-step">01</span>
+          <h3 data-i18n="streamOneTitle">Multilabel classification</h3>
+          <p data-i18n="streamOneBody">Systematic evaluation of loss functions, initialization strategies, architectures, and patient metadata fusion for ChestX-ray14.</p>
+        </article>
+        <article class="stream-card">
+          <span class="stream-step">02</span>
+          <h3 data-i18n="streamTwoTitle">Advanced preprocessing</h3>
+          <p data-i18n="streamTwoBody">Bone suppression and lung field cropping improve signal quality and support ensemble performance on curated OpenI data.</p>
+        </article>
+        <article class="stream-card">
+          <span class="stream-step">03</span>
+          <h3 data-i18n="streamThreeTitle">Clinical workflow simulation</h3>
+          <p data-i18n="streamThreeBody">Smart prioritization models simulate radiology worklists to reduce turnaround time for urgent findings.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell">
+      <div class="spotlight-grid">
+        <div class="spotlight-block">
+          <div class="section-heading compact">
+            <div>
+              <div class="eyebrow" data-i18n="spotlightPubEyebrow">Publication spotlight</div>
+              <h2 data-i18n="spotlightPubTitle">Latest featured publications</h2>
+            </div>
+          </div>
+          <div id="home-publications" class="cards-grid"></div>
+        </div>
+        <div class="spotlight-block">
+          <div class="section-heading compact">
+            <div>
+              <div class="eyebrow" data-i18n="spotlightDataEyebrow">Data spotlight</div>
+              <h2 data-i18n="spotlightDataTitle">Benchmarks and access models</h2>
+            </div>
+          </div>
+          <div id="home-datasets" class="cards-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell dual-showcase">
+      <div class="showcase-panel glass-panel">
+        <div class="section-heading compact">
+          <div>
+            <div class="eyebrow" data-i18n="blogEyebrow">Blog and notes</div>
+            <h2 data-i18n="blogTitle">Markdown-powered updates</h2>
+          </div>
+          <a class="inline-link" href="/research/#blog" data-i18n="blogLink">Read posts</a>
+        </div>
+        <div id="blog-preview" class="blog-grid"></div>
+      </div>
+      <div class="showcase-panel glass-panel">
+        <div class="section-heading compact">
+          <div>
+            <div class="eyebrow" data-i18n="eventsEyebrow">Events</div>
+            <h2 data-i18n="eventsTitle">Conference and workshop calendar</h2>
+          </div>
+          <a class="inline-link" href="/research/#events" data-i18n="eventsLink">Open calendar</a>
+        </div>
+        <div id="events-preview"></div>
+      </div>
+    </section>
+
+    <section class="section shell callout-strip">
+      <div class="callout-card">
+        <div>
+          <div class="eyebrow" data-i18n="ctaEyebrow">Collaborate</div>
+          <h2 data-i18n="ctaTitle">Need a reproducible research website for your own imaging project?</h2>
+          <p data-i18n="ctaBody">This experience includes design patterns for dataset governance, publication discovery, explainability, and developer-facing APIs.</p>
+        </div>
+        <a class="button button-primary" href="/contact/" data-i18n="ctaButton">Contact the project team</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <div id="site-overlays"></div>
+</body>
+</html>
